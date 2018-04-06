@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Clickr</string>
+    <string name="goodDogButton">Good Dog!</string>
+    <string name="whistle">Whistle</string>
+    <string name="sitTracker">Sit Tracker</string>
+    <string name="title_activity_training_log">TrainingLog</string>
+    <string name="total_Clicks">Total Clicks</string>
+    <string name="sitText">Sit</string>
+    <string name="layDownTest">Lay-Down</string>
+    <string name="handShake">Hand Shake</string>
+
+</resources>
+
