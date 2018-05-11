@@ -8,6 +8,12 @@
     <string name="sitText">Sit</string>
     <string name="layDownTest">Lay-Down</string>
     <string name="handShake">Hand Shake</string>
+    <string name="back">Back</string>
+    <string name="shake">sha...</string>
+    <string name="lay">lay...</string>
+    <string name="sit">sit...</string>
+    <string name="layText">Lay Tracker</string>
+    <string name="shakeText">Shake Tracker</string>
 
 </resources>
 
