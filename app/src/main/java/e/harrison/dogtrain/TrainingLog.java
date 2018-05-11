@@ -17,9 +17,6 @@ public class TrainingLog extends AppCompatActivity {
     private Intent intent;
     private Button backButton, shakeButton, layButton, sitButton;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,13 +35,7 @@ public class TrainingLog extends AppCompatActivity {
         layButton.setOnClickListener(layListener);
         sitButton.setOnClickListener(sitListener);
 
-
-
-
         setProgressBar();
-
-
-
     }
 
     View.OnClickListener backToMainListener = new View.OnClickListener() {
@@ -55,28 +46,14 @@ public class TrainingLog extends AppCompatActivity {
             TrainingLog.this.startActivity(mainIntent);
         }
     };
-
     void setProgressBar() {
-
-
         Bundle bundle = intent.getExtras();
         trackerUpdate = bundle.getString("counted");
         int counter = Integer.parseInt(trackerUpdate);
         progressBar.setProgress(counter);
         progressBar.setMax(50);
         test.setText(trackerUpdate);
-
-
-
-
     }
-
-
-
-
-
-
-
 
     View.OnClickListener sitListener = new View.OnClickListener() {
         @Override
@@ -90,24 +67,16 @@ public class TrainingLog extends AppCompatActivity {
             if (sitCounter.equals("Sit Tracker")) {
 
                 int counter = Integer.parseInt(sitCount);
-
                 test.setText(sitCount);
-
             }
-
-
         }
 
     };
-
-
         View.OnClickListener shakeListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Bundle bundle = intent.getExtras();
                 bundle.getString("currentTrick");
-
-
             }
         };
 
@@ -116,13 +85,6 @@ public class TrainingLog extends AppCompatActivity {
             public void onClick(View view) {
                 Bundle bundle = intent.getExtras();
                 bundle.getString("currentTrick");
-
-
             }
         };
     }
-
-
-
-
-
